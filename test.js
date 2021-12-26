@@ -8,7 +8,7 @@ const { VARCHAR } = require("mysql/lib/protocol/constants/types");
 //connection to MongoDb data base
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/test', {
+        await mongoose.connect('the local link to my mongodb data base', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
@@ -26,7 +26,7 @@ const connectDB = async () => {
     host: "localhost",
     user: "root",
     password: "",
-    database: "zaaid"
+    database: "the name of mysql data base that i used"
   });
 
   con.connect((err)=>{
